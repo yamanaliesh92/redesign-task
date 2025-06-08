@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+### Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First off, I want to thank REM Waste for this opportunity and the reviewers for taking the time.
 
-## Available Scripts
+### Changes Overview
 
-In the project directory, you can run:
+Changes are pushed to `github` in PR-workflow. commits and branches are viewable from github UI
 
-### `npm start`
+the changes I made are:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Stepper redesign
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Update the feel as well as the look for the stepper to imply _progress_ with each step user navigates to, coloring the steps user already has passed with a different color
 
-### `npm test`
+#### Select Skip page redesign
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Added more compact fee to the cards themselves, exposing the price even more to the user as it's the most important information they'd want to see
 
-### `npm run build`
+Borders and colors are rethought as well to go with the overall app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### New Functionality In Stepper
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+User can now navigate back and forth in the stepper, offering more forgiving user experience
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Confirmation Is Now A Modal
 
-### `npm run eject`
+Change the skip's selection confirmation to be a modal, this gives the user an application-feel more than a website-feel
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The information displayed in the modal in a way that is easy for the user to see
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### **Bonus Change** Dark/Light Mode
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Added dark/light mode using `react context` giving users more say as to how they want the app to look and feel.
