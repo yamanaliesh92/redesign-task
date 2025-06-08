@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { useStep } from "../context/StepContext";
+import { useStep } from "../context/stepContext";
 
 const ContinueButton = () => {
   const { currentStep, nextStep } = useStep();

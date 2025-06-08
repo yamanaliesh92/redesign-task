@@ -1,5 +1,5 @@
 import "./App.css";
-import ThemeToggle from "./components/ThemeToggle";
+import ThemeToggle from "./components/themeToggle";
 import Header from "./layout/header";
 
 function App() {

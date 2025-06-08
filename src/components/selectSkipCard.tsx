@@ -1,6 +1,7 @@
 import { AlertTriangle, CheckCircle } from "lucide-react";
 import { useState } from "react";
 import { SelectSkip } from "../types";
+import SelectSkipToPermitPageModal from "./selectSkipToPermitPageModal";
 
 export default function SelectSkipCard({
   skip,
@@ -79,7 +80,7 @@ export default function SelectSkipCard({
         </div>
       </div>
 
-      <SkipToPermitDialog isOpen={isOpen} setIsOpen={setIsOpen} skip={skip} />
+      <SelectSkipToPermitPageModal isOpen={isOpen} setIsOpen={setIsOpen} skip={skip} />
     </>
   );
 }

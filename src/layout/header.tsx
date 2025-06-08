@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import { steps, useStep } from "../context/StepContext";
+import { steps, useStep } from "../context/stepContext";
 
 const Header = () => {
   const { currentStep, setCurrentStep } = useStep();
