@@ -1,3 +1,5 @@
+import ContinueButton from "../components/ContinueButton";
+
 interface PageTitleProps {
   pageName: string;
 }
