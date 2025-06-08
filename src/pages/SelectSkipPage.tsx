@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { skipData } from "../static/selectSkipData";
+import SelectSkipCard from "../components/selectSkipCard";
 
 export default function SelectSkipPage() {
   const [selectedId, setSelectedId] = useState<number | null>(null);
@@ -12,7 +13,7 @@ export default function SelectSkipPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
         {skipData.map((skip) => (
-          <SkipCard key={skip.id} skip={skip} selectedId={selectedId} setSelectedId={setSelectedId} />
+          <SelectSkipCard key={skip.id} skip={skip} selectedId={selectedId} setSelectedId={setSelectedId} />
         ))}
       </div>
     </div>
