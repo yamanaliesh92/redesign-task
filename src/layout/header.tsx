@@ -1,7 +1,5 @@
 import { Star } from "lucide-react";
-import { useStep } from "./StepContext";
-
-const steps = ["Postcode", "Waste Type", "Select Skip", "Permit Check", "Choose Date", "Payment"];
+import { steps, useStep } from "../context/StepContext";
 
 const Header = () => {
   const { currentStep, setCurrentStep } = useStep();
