@@ -5,7 +5,7 @@ import StepContent from "./pages/stepContent";
 
 function App() {
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-800 ">
       <Header />
       <StepContent />
       <ThemeToggle />

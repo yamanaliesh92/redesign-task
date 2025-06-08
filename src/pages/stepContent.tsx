@@ -1,6 +1,6 @@
 import { useStep } from "../context/stepContext";
-import PageTitle from "./PageTitle";
-import SelectSkipPage from "./SelectSkipPage";
+import PageTitle from "./pageTitle";
+import SelectSkipPage from "./selectSkipPage";
 
 const StepContent = () => {
   const { currentStep } = useStep();
